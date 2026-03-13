@@ -1,4 +1,4 @@
-import { toast } from "../../src/index.js";
+import { toast } from "https://esm.sh/gh/rosissharma/anitoast/src/index.js";
 window.toast = toast;
 toast.init({ position: "bottom-right", theme: "dark" });
 
