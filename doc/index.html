@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="anitoast" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <title>anitoast — Toast Notifications for Any JavaScript Framework</title>
+    <meta
+      name="description"
+      content="anitoast is a lightweight, zero-dependency toast notification library for vanilla JavaScript, React, Vue, Svelte, and any framework. No bundler required. Pure CSS animations with full accessibility support."
+    />
+    <meta name="author" content="anitoast" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="anitoast" />
+
+    <meta
+      property="og:title"
+      content="anitoast — Toast Notifications for Any JavaScript Framework"
+    />
+    <meta
+      property="og:description"
+      content="Lightweight, zero-dependency toast notifications for vanilla JS, React, Vue, Svelte, and any framework. No bundler required. Full accessibility support."
+    />
+    <meta property="og:image" content="assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="anitoast — Toast notifications for any JavaScript framework"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="anitoast — Toast Notifications for Any JavaScript Framework"
+    />
+    <meta
+      name="twitter:description"
+      content="Lightweight, zero-dependency toast notifications for vanilla JS, React, Vue, Svelte, and any framework. No bundler required."
+    />
+    <meta name="twitter:image" content="assets/og-image.png" />
+    <meta
+      name="twitter:image:alt"
+      content="anitoast — Toast notifications for any JavaScript framework"
+    />
+
+    <meta name="theme-color" content="#09090b" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="application-name" content="anitoast" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "anitoast",
+        "description": "A lightweight, zero-dependency toast notification library for vanilla JavaScript and any framework. No bundler required. Pure CSS animations with full accessibility support.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "codeRepository": "https://github.com/rosissharma/anitoast",
+        "programmingLanguage": ["JavaScript", "TypeScript"],
+        "license": "https://opensource.org/licenses/MIT",
+        "isAccessibleForFree": true
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <script>
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split(".");
+              (2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                }));
+            }
+            (((p = t.createElement("script")).type = "text/javascript"),
+              (p.async = !0),
+              (p.src =
+                s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+                "/static/array.js"),
+              (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                p,
+                r,
+              ));
+            var u = e;
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = "posthog";
+                  return (
+                    "posthog" !== a && (e += "." + a),
+                    t || (e += " (stub)"),
+                    e
+                  );
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + ".people (stub)";
+                },
+                o =
+                  "init capture register register_once register_for_session unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group identify setPersonProperties setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags resetGroups onFeatureFlags addFeatureFlagsHandler onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep".split(
+                    " ",
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
+      posthog.init("phc_P5kRZFLoiXxh0CBsQ7yStHOrYG9MOTB7BOSMO9vN14q", {
+        api_host: "https://us.i.posthog.com",
+        defaults: "2026-01-30",
+      });
+    </script>
+  </head>
+
+  <body>
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      aria-label="Toggle color theme"
+      title="Toggle light/dark theme"
+    >
+      <svg
+        class="icon-sun"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <circle cx="12" cy="12" r="5" />
+        <line x1="12" y1="1" x2="12" y2="3" />
+        <line x1="12" y1="21" x2="12" y2="23" />
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+        <line x1="1" y1="12" x2="3" y2="12" />
+        <line x1="21" y1="12" x2="23" y2="12" />
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+      </svg>
+      <svg
+        class="icon-moon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+      </svg>
+    </button>
+
+    <header class="header-wrap" role="banner">
+      <div class="header-inner">
+        <h1 class="wordmark-wrap" id="wordmark" aria-label="anitoast"></h1>
+
+        <p class="tagline">
+          A lightweight, framework-agnostic toast notification library.<br />
+          Zero dependencies. No bundler required. Pure CSS animation.
+        </p>
+
+        <ul class="chips" aria-label="Features" role="list">
+          <li class="chip" role="listitem">
+            <span class="chip-dot" aria-hidden="true"></span>0 dependencies
+          </li>
+          <li class="chip" role="listitem">
+            <span class="chip-dot" aria-hidden="true"></span>ESM + CJS
+          </li>
+          <li class="chip" role="listitem">
+            <span class="chip-dot" aria-hidden="true"></span>Promise API
+          </li>
+          <li class="chip" role="listitem">
+            <span class="chip-dot" aria-hidden="true"></span>Accessible
+          </li>
+        </ul>
+
+        <div class="install-row">
+          <div
+            class="install-pill"
+            data-copy="npm install anitoast"
+            role="button"
+            tabindex="0"
+            aria-label="Copy: npm install anitoast"
+          >
+            <code>npm install anitoast</code>
+            <svg
+              class="copy-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+              <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+            </svg>
+          </div>
+          <div
+            class="install-pill"
+            data-copy="import { toast } from 'anitoast'"
+            role="button"
+            tabindex="0"
+            aria-label="Copy import statement"
+          >
+            <code>import { toast } from 'anitoast'</code>
+            <svg
+              class="copy-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+              <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page" id="main-content" role="main">
+      <section class="section" aria-labelledby="section-config">
+        <h2 class="section-label" id="section-config">Configuration</h2>
+        <div
+          class="config-card"
+          role="group"
+          aria-label="Toast configuration options"
+        >
+          <div class="config-grid">
+            <div class="config-field">
+              <label for="cfg-position">Position</label>
+              <select id="cfg-position" aria-label="Toast position">
+                <option value="bottom-right" selected>bottom-right</option>
+                <option value="bottom-center">bottom-center</option>
+                <option value="bottom-left">bottom-left</option>
+                <option value="top-right">top-right</option>
+                <option value="top-center">top-center</option>
+                <option value="top-left">top-left</option>
+              </select>
+            </div>
+            <div class="config-field">
+              <label for="cfg-theme">Theme</label>
+              <select id="cfg-theme" aria-label="Toast theme">
+                <option value="light">light</option>
+                <option value="dark" selected>dark</option>
+                <option value="system">system</option>
+              </select>
+            </div>
+            <div class="config-field is-toggle config-row-2">
+              <label for="cfg-rich-colors">Rich Colors</label>
+              <input
+                type="checkbox"
+                id="cfg-rich-colors"
+                class="toggle"
+                aria-label="Enable rich colors"
+              />
+            </div>
+            <div class="config-field is-toggle config-row-2">
+              <label for="cfg-close-btn">Close Button</label>
+              <input
+                type="checkbox"
+                id="cfg-close-btn"
+                class="toggle"
+                aria-label="Show close button"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="section-types">
+        <h2 class="section-label" id="section-types">Toast Types</h2>
+        <div class="btn-grid" role="group" aria-label="Toast type examples">
+          <button
+            class="btn"
+            onclick="toast('Hello! This is a default toast.')"
+          >
+            Default
+          </button>
+          <button
+            class="btn"
+            onclick="toast.success('Your changes have been saved.')"
+          >
+            <span class="dot dot-green" aria-hidden="true"></span>Success
+          </button>
+          <button
+            class="btn"
+            onclick="toast.error('Something went wrong. Please try again.')"
+          >
+            <span class="dot dot-red" aria-hidden="true"></span>Error
+          </button>
+          <button
+            class="btn"
+            onclick="toast.warning('Your session will expire in 5 minutes.')"
+          >
+            <span class="dot dot-yellow" aria-hidden="true"></span>Warning
+          </button>
+          <button
+            class="btn"
+            onclick="toast.info('A new version is available.')"
+          >
+            <span class="dot dot-blue" aria-hidden="true"></span>Info
+          </button>
+          <button class="btn" onclick="demoLoading()">
+            <span class="dot dot-gray" aria-hidden="true"></span>Loading
+          </button>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="section-features">
+        <h2 class="section-label" id="section-features">Features</h2>
+        <div class="btn-grid" role="group" aria-label="Toast feature examples">
+          <button class="btn" onclick="demoDescription()">
+            With Description
+          </button>
+          <button class="btn" onclick="demoAction()">With Action</button>
+          <button class="btn" onclick="demoCancel()">With Cancel</button>
+          <button class="btn" onclick="demoPromise()">
+            <span class="dot dot-purple" aria-hidden="true"></span>Promise
+          </button>
+          <button class="btn" onclick="demoInfinite()">
+            Infinite Duration
+          </button>
+          <button class="btn" onclick="demoCustomDuration()">
+            Custom (8s)
+          </button>
+          <button class="btn" onclick="toast.dismiss()">Dismiss All</button>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="section-usage">
+        <h2 class="section-label" id="section-usage">Usage</h2>
+        <div
+          class="code-block"
+          role="region"
+          aria-label="anitoast code examples"
+        >
+<pre aria-label="JavaScript installation and usage examples">
+<span class="comment">// Import library</span>
+<span class="kw">import</span> { toast } <span class="kw">from</span> <span class="str">'anitoast'</span>;
+
+<span class="comment">// Initialize once</span>
+<span class="fn">toast</span>.<span class="fn">init</span>({
+  position: <span class="str">'bottom-right'</span>,
+  theme: <span class="str">'dark'</span>,
+  richColors: <span class="kw">false</span>,
+  closeButton: <span class="kw">false</span>,
+  duration: <span class="num">4000</span>,
+});
+
+<span class="comment">// Basic toasts</span>
+<span class="fn">toast</span>(<span class="str">'Hello world'</span>);
+<span class="fn">toast</span>.<span class="fn">success</span>(<span class="str">'Saved!'</span>);
+<span class="fn">toast</span>.<span class="fn">error</span>(<span class="str">'Failed'</span>);
+<span class="fn">toast</span>.<span class="fn">warning</span>(<span class="str">'Watch out'</span>);
+<span class="fn">toast</span>.<span class="fn">info</span>(<span class="str">'FYI'</span>);
+<span class="fn">toast</span>.<span class="fn">loading</span>(<span class="str">'Processing...'</span>);
+
+<span class="comment">// With options</span>
+<span class="fn">toast</span>.<span class="fn">success</span>(<span class="str">'File uploaded'</span>, {
+  description: <span class="str">'report.pdf was uploaded successfully'</span>,
+  duration: <span class="num">8000</span>,
+  action: { label: <span class="str">'View'</span>, onClick: () => {} },
+});
+
+<span class="comment">// Promise toast</span>
+<span class="fn">toast</span>.<span class="fn">promise</span>(<span class="fn">fetchData</span>(), {
+  loading: { title: <span class="str">'Fetching...'</span> },
+  success: (data) => ({ title: <span class="str">'Done'</span>, description: <span class="str">`Got ${data.length} items`</span> }),
+  error:   (err)  => ({ title: <span class="str">'Failed'</span>, description: err.message }),
+});
+
+<span class="comment">// Dismiss</span>
+<span class="kw">const</span> id = <span class="fn">toast</span>(<span class="str">'Persistent'</span>, { duration: <span class="kw">Infinity</span> });
+<span class="fn">toast</span>.<span class="fn">dismiss</span>(id);   <span class="comment">// one</span>
+<span class="fn">toast</span>.<span class="fn">dismiss</span>();      <span class="comment">// all</span>
+</pre>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="footer-content">
+        <span>Inspired by</span>
+        <a
+          href="https://sonner.emilkowal.ski"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Sonner toast library (opens in new tab)"
+        >
+          Sonner
+          <svg
+            class="ext-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        </a>
+        <span class="footer-div" aria-hidden="true">·</span>
+      </div>
+      <div class="footer-content">
+        <a
+          href="https://github.com/rosissharma/anitoast"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="anitoast on GitHub (opens in new tab)"
+        >
+          GitHub
+        </a>
+      </div>
+    </footer>
+
+    <script src="scripts/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "anitoast",
+  "version": "1.0.0",
+  "description": "A lightweight, framework-agnostic toast notification library with smooth animations",
+  "type": "module",
+  "main": "./dist/anitoast.umd.cjs",
+  "module": "./dist/anitoast.js",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "keywords": [
+    "toast",
+    "notification",
+    "vanilla",
+    "animation",
+    "ui"
+  ],
+  "author": "Rosis Sharma",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
