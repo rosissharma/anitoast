@@ -2,19 +2,6 @@ import { toast } from "https://esm.sh/gh/rosissharma/anitoast/src/index.js";
 window.toast = toast;
 toast.init({ position: "bottom-right", theme: "dark" });
 
-// Wordmark animation
-(function () {
-  const el = document.getElementById("wordmark");
-  const word = "anitoast.";
-  word.split("").forEach((ch, i) => {
-    const s = document.createElement("span");
-    s.className = "wm-char";
-    s.textContent = ch;
-    s.style.animationDelay = 0.05 + i * 0.07 + "s";
-    el.appendChild(s);
-  });
-})();
-
 // Theme toggle
 const html = document.documentElement;
 const btn = document.getElementById("theme-toggle");

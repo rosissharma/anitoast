@@ -209,23 +209,21 @@ body::after {
   line-height: 1;
   letter-spacing: -0.03em;
   color: var(--text);
-  opacity: 0;
-  transform: translateY(30px);
-  filter: blur(6px);
-  animation: charIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  transition: color 0.3s;
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.3s;
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(6px);
+  }
 }
 .wm-char:last-of-type {
   font-family: serif;
   color: var(--accent);
-}
-
-@keyframes charIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-  }
 }
 
 .tagline {
